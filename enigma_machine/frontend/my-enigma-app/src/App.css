@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  position: relative;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .App-logo {

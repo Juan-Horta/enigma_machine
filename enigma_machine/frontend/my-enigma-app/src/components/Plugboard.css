@@ -1,0 +1,38 @@
+.plugboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333; /* Dark background as per the image */
+  padding: 20px;
+  border-radius: 10px;
+  user-select: none; /* Prevent text selection */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.plug {
+  width: 40px; /* Adjust size to match the image */
+  height: 40px;
+  margin: 0 5px; /* Spacing between plugs */
+  background-color: #555; /* Plug color as per the image */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%; /* Circular plugs */
+  box-shadow: 0 4px #222; /* Simulate depth */
+  font-weight: bold; /* Bold text */
+  cursor: grab;
+}
+
+.plug:active {
+  cursor: grabbing;
+  box-shadow: 0 2px #222; /* Simulate pressing down */
+}
+
+/* Styles for the wires (SVG) would go here */
